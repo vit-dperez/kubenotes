@@ -39,3 +39,9 @@ kubectl get pv --sort-by=.spec.capacity.storage -o=custom-columns=NAME:.metadata
 ```
 kubectl config view --kubeconfig=my-kube-config -o jsonpath="{.contexts[?(@.context.user=='aws-user')].name}"
 ```
+
+
+**EXAM**
+```
+k get deploy -n admin2406 -o=custom-columns=DEPLOYMENT:.metadata.name,CONTAINER_IMAGE:.spec.template.spec.containers[*].image,READY_REPLICAS:.spec.replicas,NAMESPACE:.metadata.namespace
+```
