@@ -34,8 +34,8 @@ deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io
 ```
 
 **Upgrade kubeadm** 
-[Update Kubernetes with kubeadm][1]
-[1]: https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
+
+https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/
 
 ```
 sudo apt-mark unhold kubeadm && \
